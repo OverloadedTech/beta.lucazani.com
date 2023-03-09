@@ -1,0 +1,55 @@
+/**
+ * @internal Font: Material Design Icons
+ * @author Benjamin Retel - rbCREATION [https://www.rbcreation.fr]
+ * @copyright (c) 2021 - Today. All rights reserved.
+ */
+
+/* Normal */
+@font-face {
+	font-family: "Material Icons";
+	font-weight: 400;
+	font-style: normal;
+	/*src: url("../icons/material-icons/font/MaterialIcons-Regular.eot");*/ /* For IE6-8 */
+	src: local("Material Icons"),
+		local("MaterialIcons-Regular"),
+		url("font/MaterialIcons-Regular3860.html?v=1") format("woff2"),
+		url("font/MaterialIcons-Regular3860.woff?v=1") format("woff"),
+		url("font/MaterialIcons-Regular3860.ttf?v=1") format("truetype");
+}
+
+/* Rules for sizing the icon. */
+/*.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }*/
+
+/* Rules for using icons as black on a light background. */
+/*.material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
+.material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }*/
+
+/* Rules for using icons as white on a dark background. */
+/*.material-icons.md-light { color: rgba(255, 255, 255, 1); }
+.material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }*/
+
+.material-icons {
+	font-family: "Material Icons", serif;
+	font-weight: normal;
+	font-style: normal;
+	/* Preferred icon size */
+	/*font-size: 24px;*/
+	display: inline-block;
+	line-height: 1;
+	text-transform: none;
+	letter-spacing: normal;
+	word-wrap: normal;
+	white-space: nowrap;
+	direction: ltr;
+	/* Support for all WebKit browsers. */
+	-webkit-font-smoothing: antialiased;
+	/* Support for Safari and Chrome. */
+	text-rendering: optimizeLegibility;
+	/* Support for Firefox. */
+	-moz-osx-font-smoothing: grayscale;
+	/* Support for IE. */
+	font-feature-settings: "liga";
+}

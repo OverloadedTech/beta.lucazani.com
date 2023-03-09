@@ -1,0 +1,309 @@
+/**
+ * @author Benjamin Retel - rbCREATION [https://www.rbcreation.fr]
+ * @copyright (c) 2021 - Today. All rights reserved.
+ */
+
+body {
+    background: var(--color-gray-100);
+}
+
+.profile {
+    position: relative;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: var(--color-gray-100);
+    padding: var(--size-4);
+}
+
+.profile .btn-edit-profile {
+    position: absolute;
+    top: var(--size-4);
+    right: var(--size-4);
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    font-size: 18px;
+    color: var(--color-white);
+    text-decoration: none;
+    background: var(--color-gray-900);
+    border: 2px solid var(--color-white);
+    border-radius: 50%;
+    box-shadow: var(--box-shadow-1);
+    padding: 0;
+    margin: 0;
+    opacity: 0.5;
+    transition: var(--transition-button);
+}
+
+.profile .btn-edit-profile:hover {
+    opacity: 1;
+    border: 2px solid var(--color-primary);
+    background: var(--color-primary);
+}
+
+/* -------------------- */
+
+.profile .profile-header {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+/* -------------------- */
+
+.profile .profile-picture {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    width: var(--profile-picture-size);
+    height: var(--profile-picture-size);
+    background: var(--color-white);
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: var(--box-shadow-1);
+}
+
+.profile .profile-picture img {
+    display: block;
+    max-width: var(--profile-picture-size);
+    max-height: var(--profile-picture-size);
+}
+
+.profile .profile-picture span {
+    font-size: var(--profile-picture-icon-size);
+    color: var(--color-gray-400);
+}
+
+/* -------------------- */
+
+.profile .profile-name {
+    margin-top: var(--size-4);
+}
+
+.profile .profile-name > h1 {
+    font-size: 24px;
+    font-weight: var(--font-weight-bold);
+    color: var(--color-default);
+}
+
+.profile .profile-short-description {
+    margin-top: var(--size-3);
+}
+
+.profile .profile-short-description > h2 {
+    font-size: 18px;
+    font-weight: var(--font-weight-normal);
+    font-style: italic;
+    color: var(--color-default);
+}
+
+/* -------------------- */
+
+.profile .profile-body {
+    width: 100%;
+}
+
+/* -------------------- */
+
+.profile .profile-links {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    /*max-width: calc((5 * 60px) + (5 * var(--size-4)));*/
+    margin: 0 auto;
+}
+
+.profile .profile-links .group {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: var(--size-5);
+}
+
+.profile .profile-links .group-header {
+    width: 100%;
+    border-bottom: 1px solid var(--color-gray-300);
+    padding-bottom: var(--size-2);
+}
+
+.profile .profile-links .group:first-child .group-header {
+    margin-top: 0;
+}
+
+.profile .profile-links .group-name > h3 {
+    font-size: 16px;
+    font-weight: var(--font-weight-medium);
+    color: var(--color-default);
+}
+
+.profile .profile-links .group-body {
+    width: 100%;
+}
+
+/* View mode: list (default) */
+.profile .profile-links .links {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.profile .profile-links .link {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    margin-top: 12px;
+}
+
+.profile .profile-links .link > a {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    min-height: 58px;
+    color: var(--font-size-default);
+    text-decoration: none;
+    background: var(--color-white);
+    border-radius: var(--size-2);
+    box-shadow: var(--box-shadow-1);
+    transition: var(--transition-button);
+}
+
+.profile .profile-links .link .link-icon,
+.profile .profile-links .link .link-picture {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 58px;
+    height: 58px;
+    overflow: hidden;
+    padding: var(--size-3);
+}
+
+.profile .profile-links .link .link-icon span {
+    font-size: 24px;
+    color: var(--color-primary);
+}
+
+.profile .profile-links .link .link-picture img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.profile .profile-links .link .link-name {
+    flex: 1;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    word-break: break-all;
+    padding: var(--size-4);
+}
+
+.profile .profile-links .link .link-icon + .link-name,
+.profile .profile-links .link .link-picture + .link-name {
+    padding-left: var(--size-3);
+}
+
+.profile .profile-links .link .link-name > h3 {
+    font-size: 16px;
+    font-weight: var(--font-weight-normal);
+    color: var(--color-default);
+    text-align: left;
+}
+
+/* View mode: grid */
+.profile .profile-links.grid .links {
+    flex-flow: row wrap;
+}
+
+.profile .profile-links.grid .link {
+    width: auto;
+    justify-content: center;
+    padding: var(--size-3);
+}
+
+.profile .profile-links.grid .link > a {
+    flex-flow: column nowrap;
+    justify-content: center;
+    width: auto;
+    background: none;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.profile .profile-links.grid .link .link-picture {
+    border-radius: 50%;
+    box-shadow: var(--box-shadow-1);
+}
+
+.profile .profile-links.grid .link .link-name {
+    justify-content: center;
+    max-width: 64px;
+    margin-top: var(--size-3);
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.profile .profile-links.grid .link .link-name > h3 {
+    text-align: center;
+}
+
+/* -------------------- */
+
+.profile .profile-footer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: auto;
+}
+
+/* -------------------- */
+
+.profile .profile-footer .unitlink-logo {
+    margin-top: var(--size-6);
+}
+
+.profile .profile-footer .unitlink-logo a {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 128px;
+    text-decoration: none;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: var(--size-3);
+    padding: 4px 16px;
+    transition: var(--transition-link);
+}
+
+.profile .profile-footer .unitlink-logo a img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 120px;
+}

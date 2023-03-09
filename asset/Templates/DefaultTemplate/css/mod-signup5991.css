@@ -1,0 +1,126 @@
+/**
+ * @author Benjamin Retel - rbCREATION [https://www.rbcreation.fr]
+ * @copyright (c) 2021 - Today. All rights reserved.
+ */
+
+.site.mod-signup .col.first-name,
+.site.mod-signup .col.first-name * {
+    /*position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;*/
+    width: 0;
+    height: 0;
+    opacity: 0;
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+/* -------------------- */
+
+.site.mod-signup .content-success {
+    width: 100%;
+    max-width: 640px;
+    background: var(--color-white);
+    border-radius: var(--size-2);
+    box-shadow: var(--box-shadow-1);
+    padding: var(--size-4);
+    margin: 0 auto;
+    transition: var(--transition-responsive);
+}
+
+@media only screen and (min-width: 960px) {
+    .site.mod-signup .content-success {
+        padding: var(--size-5);
+    }
+}
+
+/* part 1 */
+.site.mod-signup .content-success > div:first-of-type .logo {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.site.mod-signup .content-success > div:first-of-type .logo a {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    text-decoration: none;
+    transition: var(--transition-link);
+}
+
+.site.mod-signup .content-success > div:first-of-type .logo a img {
+    width: 150px;
+}
+
+.site.mod-signup .content-success > div:first-of-type h1 {
+    font-size: 34px;
+    margin-top: var(--size-3);
+    transition: var(--transition-responsive);
+}
+
+@media only screen and (min-width: 960px) {
+    .site.mod-signup .content-success > div:first-of-type h1 {
+        font-size: 40px;
+        margin-top: var(--size-4);
+    }
+}
+
+.site.mod-signup .content-success > div:first-of-type h2 {
+    font-size: 28px;
+    margin-top: var(--size-4);
+    transition: var(--transition-responsive);
+}
+
+@media only screen and (min-width: 960px) {
+    .site.mod-signup .content-success > div:first-of-type h2 {
+        font-size: 34px;
+    }
+}
+
+.site.mod-signup .content-success > div:first-of-type p {
+    font-size: 20px;
+    text-align: center;
+    margin-top: var(--size-2);
+    transition: var(--transition-responsive);
+}
+
+@media only screen and (min-width: 960px) {
+    .site.mod-signup .content-success > div:first-of-type p {
+        font-size: 24px;
+        margin-top: var(--size-3);
+    }
+}
+
+/* part 2 */
+.site.mod-signup .content-success > div:nth-child(2) h2 {
+    font-size: 16px;
+    margin-top: var(--size-5);
+    transition: var(--transition-responsive);
+}
+
+@media only screen and (min-width: 960px) {
+    .site.mod-signup .content-success > div:nth-child(2) h2 {
+        font-size: 18px;
+        margin-top: var(--size-6);
+    }
+}
+
+.site.mod-signup .content-success > div:nth-child(2) p {
+    font-size: 16px;
+    text-align: center;
+    margin-top: var(--size-2);
+    transition: var(--transition-responsive);
+}
+
+@media only screen and (min-width: 960px) {
+    .site.mod-signup .content-success > div:nth-child(2) p {
+        font-size: 18px;
+        margin-top: var(--size-3);
+    }
+}

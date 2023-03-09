@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+      body {
+        background-color: #333;
+        color: white;
+        font-family: 'Roboto', sans-serif;
+      }
+      .error-message {
+        text-align: center;
+        font-size: 36px;
+        margin-top: 50px;
+        animation: shake 0.5s ease;
+        animation-iteration-count: infinite;
+      }
+      @keyframes shake {
+        0% { transform: translate(1px, 1px) rotate(0deg); }
+        10% { transform: translate(-1px, -2px) rotate(-1deg); }
+        20% { transform: translate(-3px, 0px) rotate(1deg); }
+        30% { transform: translate(3px, 2px) rotate(0deg); }
+        40% { transform: translate(1px, -1px) rotate(1deg); }
+        50% { transform: translate(-1px, 2px) rotate(-1deg); }
+        60% { transform: translate(-3px, 1px) rotate(0deg); }
+        70% { transform: translate(3px, 1px) rotate(-1deg); }
+        80% { transform: translate(-1px, -1px) rotate(1deg); }
+        90% { transform: translate(1px, 2px) rotate(0deg); }
+        100% { transform: translate(1px, -2px) rotate(-1deg); }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container h-100 d-flex justify-content-center align-items-center">
+      <div class="error-message text-center">
+        <h1 class="display-1">404</h1>
+        <p class="lead">Sorry, the page you're looking for doesn't exist.</p>
+        <p class="lead">Redirecting you back home in <span id="countdown">3</span> seconds...</p>
+      </div>
+    </div>
+    <script>
+      const countdown = document.querySelector("#countdown");
+      let count = 3;
+      setInterval(() => {
+        if (count > 0) {
+          countdown.innerHTML = count;
+          count--;
+        } else {
+          window.location.href = "/";
+        }
+      }, 1000);
+    </script>
+  </body>
+</html>
